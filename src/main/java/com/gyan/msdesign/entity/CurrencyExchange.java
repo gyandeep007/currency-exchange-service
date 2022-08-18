@@ -1,19 +1,30 @@
 package com.gyan.msdesign.entity;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 
 @NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Data
+@Entity
 public class CurrencyExchange {
 
+    @Id
+    @NonNull
     private Long id;
+    @NonNull
+    @Column(name="currency_from")
     private String from;
+    @NonNull
+    @Column(name="currency_to")
     private String to;
-    private BigDecimal multipleConversion;
+    @NonNull
+    @Column(name="conversion_multiple")
+    private BigDecimal conversionMultiple;
+    private String environment;
 }
