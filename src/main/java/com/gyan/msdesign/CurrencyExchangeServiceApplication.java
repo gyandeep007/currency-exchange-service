@@ -1,4 +1,4 @@
-package com.gyan.msdesign.currencyexchangeservice;
+package com.gyan.msdesign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
