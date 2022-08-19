@@ -5,3 +5,13 @@ http://localhost:8000/currency-exchange/from/{from}/tp/{to}
 
 currency-conversion-service
 http://localhost:8100/currency-conversion/from/{from}/to/{to}/quantity
+
+currency-conversion-service
+http://localhost:8100/currency-conversion-feign/from/{from}/to/{to}/quantity
+
+
+Eureka
+http://localhost:8761
+
+api-gateway
+http://localhost:8765
